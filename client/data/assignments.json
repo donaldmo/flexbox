@@ -1,0 +1,36 @@
+{
+  "assignments": [
+    {
+      "title": "Assignment 1",
+      "instructions": "",
+      "description": "",
+      "dueDate": "",
+      "submitions": [
+        {
+          "studentId": "0",
+          "studentName": "Student Name",
+          "submitionDate": "0"
+        }
+      ],
+      "submitionType": "hand || online",
+      "marks": "100",
+      "rubrick": [],
+      "attachments": [
+        {
+          "type": "DOCUMENT",
+          "url": "",
+          "name": ""
+        },
+        {
+          "type": "YOUTUBE",
+          "url": "",
+          "name": ""
+        }
+      ],
+      "author": {
+        "userId": "0",
+        "userName": "User Name"
+      }
+    }
+  ]
+}

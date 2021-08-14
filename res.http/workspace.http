@@ -1,0 +1,114 @@
+### Login Route
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+  "email": "domotswiri@gmail.com",
+  "password": "password123"
+}
+
+### POST workspace
+POST http://localhost:4000/workspace/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+{
+  "name": "Team Flex Box",
+  "description": "This is the best awesome team ever..."
+}
+
+### GET all workspaces
+GET http://localhost:4000/workspace
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### GET single workspace
+GET http://localhost:4000/workspace/get/610e6323c5a0890b1a764a01
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### POST workspace Invite Member to workpace
+POST http://localhost:4000/workspace/invite-member
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+{
+  "email": "motswiridonald@gmail.com",
+  "workspaceId": "610e6323c5a0890b1a764a01"
+}
+
+### GET join workspace
+GET http://localhost:4000/workspace/join-workspace?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgzNjQ1MTUsImV4cCI6MTY1OTkyMjExNSwiYXVkIjoiNjEwZTYzMjNjNWEwODkwYjFhNzY0YTAxIiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.05tZfPvQcy8ixLh2rb9E3tR7C6T4xVmis548X2bOMbw
+Content-Type: application/json
+
+### GET Add Grade
+GET http://localhost:4000/workspace/grades
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### POST Add Grade
+POST http://localhost:4000/workspace/add-grade
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+{
+  "name": "Grade 12 A Rocks",
+  "description": "This is the best awesome grade ever...",
+  "workspaceId": "610efb44caa3221f9bed0688"
+}
+
+### GET Add Grade
+GET http://localhost:4000/workspace/grades
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### GET a Single Grade
+GET http://localhost:4000/workspace/grades/610fc60380390e0e6d589890
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### GET Workspace Members
+GET http://localhost:4000/workspace/members/610efb44caa3221f9bed0688
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### POST workspace Add Teacher to grade, @param: gradeId
+POST http://localhost:4000/workspace/grade/add-teacher/610fc60380390e0e6d589890
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+{
+  "workspaceId": "610efb44caa3221f9bed0688",
+  "teachers": [
+    {
+      "userName": "Donald Motswiri",
+      "userId": "610fa8bbd1b07c07a939370f"
+    },
+    {
+      "userName": "Donald Motswiri",
+      "userId": "610fa8bbd1b07c07a939370f"
+    }
+  ]
+}
+
+### POST workspace Add Student
+POST http://localhost:4000/workspace/add-student/610efb44caa3221f9bed0688
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+{
+  "firstName": "Student",
+  "lastName": "Rebualefe Student",
+  "email": "domotswiri@gmail.com",
+  "password": "password"
+}
+
+### GET join student
+GET http://localhost:4000/workspace/join-student?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Mjg1MTAzNjksImV4cCI6MTYyODU5Njc2OSwiYXVkIjoiZG9tb3Rzd2lyaUBnbWFpbC5jb20iLCJpc3MiOiJwaWNrdXJwYWdlLmNvbSJ9.0tk8GDu9bjk0Zj9_pM_U9obnoAZse3LFM0VSh1HTRRY&workspaceId=610efb44caa3221f9bed0688
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI
+
+### GET Workspace Students
+GET http://localhost:4000/workspace/students/610efb44caa3221f9bed0688
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjgyOTg0OTUsImV4cCI6MTYzMDg5MDQ5NSwiYXVkIjoiNjEwZDdiOTYxYWE4NDAxOGE3ZjU5MTI2IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.P0TQIb08g05fJZn4ZUf08nb1qG1TmGC3xwKCiWVBziI

@@ -1,0 +1,60 @@
+{
+  "subject": [
+    {
+      "title": "Language - English",
+      "details": "A language is a structured system of communication used by humans, based on speech and gesture, sign, or often writing. The structure of language is its grammar and the free components are its vocabulary.",
+      "_id": 0,
+      "image": "https://source.unsplash.com/random",
+      "createdBy": {
+        "userName": "Jane Doe",
+        "userId": "0"
+      },
+      "students": [
+        {
+          "_id": "alkdjfeiernenenw",
+          "studentId": "alkdjfeiernenenw",
+          "studentName": "Student Name"
+        }
+      ],
+      "tasks": [
+        {
+          "_id": "alkdjfeiernenenw",
+          "title": "Write a Poem",
+          "attachments:": "[]",
+          "dueDate": "",
+          "createdAt": "",
+          "updatedAt": "",
+          "submitions": [
+            {
+              "studentName": "",
+              "studentId": "",
+              "createdAt": ""
+            }
+          ]
+        }
+      ],
+      "assignments": [
+        {
+          "assignmentId": "0",
+          "assignmentName": "Assignment 1"
+        }
+      ],
+      "liveClass": [
+        {
+          "_id": "0",
+          "time": "",
+          "name": "",
+          "code": "",
+          "paticipants": [
+            {
+              "studentId": "",
+              "studentName": "Student Name"
+            }
+          ]
+        }
+      ],
+      "createdAt": "1739394747329",
+      "updatedAt": "queeirueowehr"
+    }
+  ]
+}

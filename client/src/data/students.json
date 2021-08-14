@@ -1,0 +1,178 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Marius",
+        "last": "Larsen"
+      },
+      "location": {
+        "street": {
+          "number": 9090,
+          "name": "Primulavej"
+        },
+        "city": "Snertinge",
+        "state": "Syddanmark",
+        "country": "Denmark",
+        "postcode": 61192,
+        "coordinates": {
+          "latitude": "-34.8718",
+          "longitude": "-45.9732"
+        },
+        "timezone": {
+          "offset": "0:00",
+          "description": "Western Europe Time, London, Lisbon, Casablanca"
+        }
+      },
+      "email": "marius.larsen@example.com",
+      "login": {
+        "uuid": "966eacf9-b7ff-4be3-9002-53a2a61c3746",
+        "username": "angrycat420",
+        "password": "191919",
+        "salt": "UD87T4ph",
+        "md5": "4177b90aab010422dc9d750d76b781e4",
+        "sha1": "42460563ad3e6044e99fe03a530bb91642bd23de",
+        "sha256": "487188833d22dfad1bec984757a0e2db1bb72c175443df0fe89d0a0c20ce11b5"
+      },
+      "dob": {
+        "date": "1955-05-31T11:34:37.110Z",
+        "age": 66
+      },
+      "registered": {
+        "date": "2013-03-27T13:40:19.398Z",
+        "age": 8
+      },
+      "phone": "64082433",
+      "cell": "94415801",
+      "id": {
+        "name": "CPR",
+        "value": "310555-5477"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/13.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/13.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/13.jpg"
+      },
+      "nat": "DK"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Louella",
+        "last": "Davis"
+      },
+      "location": {
+        "street": {
+          "number": 366,
+          "name": "Ranchview Dr"
+        },
+        "city": "Bunbury",
+        "state": "Victoria",
+        "country": "Australia",
+        "postcode": 9905,
+        "coordinates": {
+          "latitude": "-86.2680",
+          "longitude": "136.7121"
+        },
+        "timezone": {
+          "offset": "-12:00",
+          "description": "Eniwetok, Kwajalein"
+        }
+      },
+      "email": "louella.davis@example.com",
+      "login": {
+        "uuid": "93600b3c-a1f1-41d2-a133-82e4d913127f",
+        "username": "brownlion230",
+        "password": "clover",
+        "salt": "e8fhZkzg",
+        "md5": "57a9bfc9223b01e9b2b56a5728d7070d",
+        "sha1": "69667e43af79fc1f21434442258db81dead72878",
+        "sha256": "d42469831d3e145cb0b2e3f20cc9133be81f8ecd7da73ce6205b593817d3d2dd"
+      },
+      "dob": {
+        "date": "1992-03-02T12:44:17.419Z",
+        "age": 29
+      },
+      "registered": {
+        "date": "2007-07-11T02:36:27.991Z",
+        "age": 14
+      },
+      "phone": "06-1211-4983",
+      "cell": "0461-878-448",
+      "id": {
+        "name": "TFN",
+        "value": "816154677"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/84.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+      },
+      "nat": "AU"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Edeolinda",
+        "last": "da Paz"
+      },
+      "location": {
+        "street": {
+          "number": 2510,
+          "name": "Rua Dezessete "
+        },
+        "city": "Linhares",
+        "state": "Rio Grande do Norte",
+        "country": "Brazil",
+        "postcode": 15219,
+        "coordinates": {
+          "latitude": "-77.1879",
+          "longitude": "63.6784"
+        },
+        "timezone": {
+          "offset": "+4:00",
+          "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+        }
+      },
+      "email": "edeolinda.dapaz@example.com",
+      "login": {
+        "uuid": "443a447b-0f50-49a5-a9d7-2d2216a2a288",
+        "username": "lazydog834",
+        "password": "stiffy",
+        "salt": "8uaKPx4K",
+        "md5": "51da798ddd5b6aa6118d2a93992a5eb6",
+        "sha1": "d223fe08c0f1204114c39d749ec4ddcda9e80f35",
+        "sha256": "a2b91085464711649e474124a73afb8beb1e763b0ec175d1a206753109fa9010"
+      },
+      "dob": {
+        "date": "1952-05-15T17:40:59.491Z",
+        "age": 69
+      },
+      "registered": {
+        "date": "2004-12-27T13:26:07.900Z",
+        "age": 17
+      },
+      "phone": "(46) 1615-5670",
+      "cell": "(06) 5087-7534",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/10.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/10.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/10.jpg"
+      },
+      "nat": "BR"
+    }
+  ],
+  "info": {
+    "seed": "18d152d73a758ee4",
+    "results": 1,
+    "page": 1,
+    "version": "1.3"
+  }
+}

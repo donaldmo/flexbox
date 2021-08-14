@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "title": "Yoshi's birthday bash",
+      "details": "Lorem Ipsum is simply dummy text fo the printing and typesetting industry.",
+      "category": "reminders",
+      "id": 0
+    },
+    {
+      "title": "Order a pizza!",
+      "details": "Lorem Ipsum is simply dummy text fo the printing and typesetting industry.",
+      "category": "reminders",
+      "id": 2
+    },
+    {
+      "title": "Code Lab",
+      "details": "Code on Android Studio",
+      "category": "work",
+      "id": 3
+    },
+    {
+      "title": "Clean The Room",
+      "details": "Lorem Ipsum is simply dummy text fo the printing and typesetting industry.",
+      "category": "todos",
+      "id": 4
+    },
+    {
+      "title": "Pay the milkman",
+      "details": "Lorem Ipsum is simply dummy text fo the printing and typesetting industry.",
+      "category": "money",
+      "id": 5
+    }
+  ]
+}

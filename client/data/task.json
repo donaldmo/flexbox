@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "title": "Assignment 1",
+      "startTime": "",
+      "endTime": "",
+      "submitions": [
+        {
+          "studentId": "0",
+          "studentName": "Student Name",
+          "submitionDate": "0"
+        }
+      ],
+      "submitionType": "hand || online",
+      "marks": "100",
+      "rubrick": [],
+      "attachments": [
+        {
+          "type": "DOCUMENT",
+          "url": "",
+          "name": ""
+        },
+        {
+          "type": "YOUTUBE",
+          "url": "",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}
