@@ -35,10 +35,10 @@ app.use((req, res, next) => {
 })
 
 // // Production
-// const url = `mongodb+srv://pandopot:MF2MolHMUfmcnflJ@cluster0.yjoup.gcp.mongodb.net/pandopot`
+const url = `mongodb+srv://flexbox_user_01:zsC8gfzmQ2lVpWN4@cluster0.yjoup.gcp.mongodb.net/flexbox_classroom`
 
 const mongoDBStore = new MongoDBStore({
-  uri: process.env.MONGODB_URL,
+  uri: url,
   collection: 'session',
   ttl: parseInt(process.env.SESSION_LIFETIME) / 1000
 })
@@ -137,7 +137,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-mongoose.connect(process.env.MONGODB_URL, connectionParams)
+mongoose.connect(url, connectionParams)
   .then(() => {
     console.log('MongoDB Connected...')
 
