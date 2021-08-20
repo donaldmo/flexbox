@@ -214,7 +214,7 @@ exports.postJoinWorkspace = async (req, res, next) => {
 exports.addGrade = async (req, res, next) => {
   try {
     console.log('body: ', req.body)
-    const grade = new Workspace({
+    const grade = new Grade({
       name: req.body.name,
       description: req.body.description,
       author: {
