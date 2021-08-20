@@ -30,48 +30,28 @@ const schema = new Schema({
   }],
   grades: [
     {
-      name: {
+      gradeName: {
         type: String,
         required: true
       },
-      description: {
+      gradeId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'Grade'
+      }
+    }
+  ],
+  students: [
+    {
+      userName: {
         type: String,
+        required: true
       },
-      teachers: [
-        {
-          name: {
-            type: String,
-            required: true
-          },
-          userId: {
-            type: Schema.Types.ObjectId,
-            required: true,
-            ref: 'User'
-          }
-        }
-      ],
-      students: [
-        {
-          studentName: {
-            type: String,
-            required: true
-          },
-          studentId: {
-            type: Schema.Types.ObjectId,
-            required: true,
-          }
-        }
-      ],
-      author: {
-        name: {
-          type: String,
-          required: true
-        },
-        userId: {
-          type: Schema.Types.ObjectId,
-          required: true,
-        }
-      },
+      userId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
+      }
     }
   ],
   author: {
@@ -84,49 +64,9 @@ const schema = new Schema({
       required: true,
       ref: 'User'
     }
-  },
-  students: [
-    {
-      firstName: {
-        type: String,
-        required: true
-      },
-      lastName: {
-        type: String,
-        required: true
-      },
-      email: {
-        type: String,
-        required: true
-      },
-      password: {
-        type: String,
-        required: true
-      },
-      confirmJoin: {
-        type: Boolean,
-        default: false
-      },
-      gradeJoined: [
-        {
-          gradeName: {
-            type: String,
-            required: true
-          },
-          gradeId: {
-            type: Schema.Types.ObjectId,
-            required: true,
-          },
-          workspaceId: {
-            type: Schema.Types.ObjectId,
-            required: true,
-          }
-        }
-      ],
-    }
-  ]
+  }
 },
   { timestamps: true });
 
-const WorkSpace = mongoose.model('WorkSpace', schema);
-module.exports = WorkSpace
+const Workspace = mongoose.model('Workspace', schema);
+module.exports = Workspace

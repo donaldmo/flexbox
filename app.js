@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 const url = `mongodb+srv://flexbox_user_01:zsC8gfzmQ2lVpWN4@cluster0.yjoup.gcp.mongodb.net/flexbox_classroom`
 
 const mongoDBStore = new MongoDBStore({
-  uri: url,
+  uri: process.env.MONGODB_URL,
   collection: 'session',
   ttl: parseInt(process.env.SESSION_LIFETIME) / 1000
 })
@@ -75,6 +75,7 @@ app.use('/profile', verifyAccessToken, PrifileRoute)
 /* @route protected /workspace
 */ 
 app.use('/workspace', WorkspaceRoute)
+app.use('/workspaces', WorkspaceRoute)
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

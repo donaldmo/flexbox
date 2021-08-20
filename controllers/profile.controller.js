@@ -16,14 +16,14 @@ const {
 
 const sendEmail = require('../helpers/send_email');
 
-exports.viewProfile = async (req, res, next) => {
+exports.getProfile = async (req, res, next) => {
   try {
     const user = await User.findOne({ _id: req.payload.aud })
 
-    res.send({ data: user });
+    res.send(user);
   }
   catch (error) {
-    console.log('viewProfile: ', error)
+    console.log('getProfile: ', error)
     if (error.isJoi === true) error.status = 422;
     next(error);
   }

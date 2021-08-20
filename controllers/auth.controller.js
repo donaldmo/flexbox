@@ -61,6 +61,7 @@ exports.register = async (req, res, next) => {
 
 exports.login = async (req, res, next) => {
   try {
+    console.log('login: ', req.body)
     const result = await authSchema.validateAsync(req.body);
     const user = await User.findOne({ email: result.email });
     if (!user) throw createError.NotFound('User not registered');

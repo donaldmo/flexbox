@@ -26,6 +26,7 @@ const sendEmail = require('../helpers/send_email');
 
 exports.addWorkspace = async (req, res, next) => {
   try {
+    console.log(req.body)
     const user = await User.findOne({ _id: req.payload.aud })
     if (!user) throw createError.Unauthorized()
 
@@ -37,15 +38,15 @@ exports.addWorkspace = async (req, res, next) => {
       }
     })
 
-    const new_workspace = new Workspace(result);
+    const new_workspace = new Workspace(result)
     const save_workspace = await new_workspace.save()
 
     res.send(save_workspace)
   }
   catch (error) {
     console.log(error)
-    if (error.isJoi === true) error.status = 422;
-    next(error);
+    if (error.isJoi === true) error.status = 422
+    next(error)
   }
 }
 
@@ -53,10 +54,10 @@ exports.getWorkspace = async (req, res, next) => {
   try {
     const user = await User.findOne({ _id: req.payload.aud })
     if (!user) throw createError.Unauthorized()
+    console.log('user: ', user)
 
-    const workspace = await Workspace.find({
-      'author.userId': req.payload.aud
-    })
+    const workspace = await Workspace.find({})
+    console.log('workspace: ', workspace)
 
     res.send(workspace)
   }
@@ -213,33 +214,15 @@ exports.postJoinWorkspace = async (req, res, next) => {
 exports.addGrade = async (req, res, next) => {
   try {
     console.log('body: ', req.body)
-    if (!req.body.workspaceId) throw createError.BadRequest(
-      'Workspace Id is Required'
-    )
-
-    const user = await User.findOne({ _id: req.payload.aud })
-    if (!user) throw createError.Unauthorized()
-
-    const workspace = await Workspace.findOne({ _id: req.body.workspaceId });
-    if (!workspace) throw createError.NotFound('Workspace is Not Found')
-    console.log('workspace: ', workspace)
-
-    const author = {
-      name: user.firstName + ' ' + user.lastName,
-      userId: user._id
-    }
-    console.log('author: ', author)
-    const result = await gradeSchema.validateAsync({
+    const grade = new Workspace({
       name: req.body.name,
       description: req.body.description,
-      author: author
+      author: {
+        name: "Motswiri Donald",
+        userId: req.payload.aud
+      }
     })
-
-    /* Save grade to workspace
-    ------------------------------------------ */
-    workspace.grades.push({ ...result, author })
-    const save_grade = await workspace.save()
-    console.log('save_grade: ', save_grade)
+    const save_grade = await grade.save()
 
     res.send(save_grade)
   }
